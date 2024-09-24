@@ -1,0 +1,141 @@
+Este código permite que o usuário insira dois números e escolha um operador lógico ou matemático para realizar uma operação entre esses números. Com base no operador fornecido, o programa realiza a operação correspondente e exibe o resultado.
+
+
+---
+
+Entradas
+
+1. n1 (int): O primeiro número inteiro que o usuário digita.
+
+
+2. n2 (int): O segundo número inteiro que o usuário digita.
+
+
+3. operador (str): O operador que o usuário escolhe para realizar a operação entre n1 e n2.
+
+
+
+
+---
+
+Operações Suportadas
+
+O código aceita os seguintes operadores para realizar operações matemáticas ou lógicas entre os dois números:
+
++: Soma os dois números.
+
+-: Subtrai o segundo número do primeiro.
+
+*: Multiplica os dois números.
+
+**: Eleva o primeiro número à potência do segundo.
+
+/: Divide o primeiro número pelo segundo.
+
+!=: Compara se os dois números são diferentes.
+
+%: Calcula o resto da divisão do primeiro número pelo segundo.
+
+
+Caso o operador inserido não seja um dos listados acima, o programa exibe uma mensagem de erro indicando "Operador Invalido".
+
+
+---
+
+Estrutura do Código
+
+1. Entrada de Dados:
+
+O programa solicita ao usuário que insira dois números inteiros e um operador lógico ou matemático.
+
+
+n1 = int(input('Digite o Primeiro Número: '))
+n2 = int(input('Digite o Segundo Número: '))
+operador = input('Escolha um Operador Lógico: ')
+
+
+2. Lógica para Escolher o Operador:
+
+O programa utiliza uma estrutura if-elif-else para verificar qual operador o usuário escolheu.
+
+Dependendo do operador escolhido, a operação correspondente é realizada e o resultado é impresso.
+
+Operadores e Ações:
+
++: Soma (n1 + n2).
+
+-: Subtração (n1 - n2).
+
+*: Multiplicação (n1 * n2).
+
+**: Potência (n1 ** n2).
+
+/: Divisão (n1 / n2).
+
+!=: Verifica se n1 é diferente de n2.
+
+%: Calcula o módulo (resto) de n1 dividido por n2.
+
+Se o operador não for reconhecido, o código imprime "Operador Invalido".
+
+
+if operador == '+': 
+    print(n1 + n2)
+elif operador == '-': 
+    print(n1 - n2)
+elif operador == '*': 
+    print(n1 * n2)    
+elif operador == '**':
+    print(n1 ** n2)   
+elif operador == '/':
+    print(n1 / n2)
+elif operador == '!=':
+    print(n1 != n2)
+elif operador == '%': 
+    print(n1 % n2)
+else:
+    print('Operador Invalido')
+
+
+
+
+
+---
+
+Considerações Adicionais
+
+Validação de Entrada: O código assume que o usuário sempre fornecerá números inteiros válidos. No entanto, ele não trata casos como a divisão por zero ou entradas não numéricas.
+
+Operadores Não Suportados: Se o usuário inserir um operador não listado nas condições, a mensagem "Operador Invalido" será exibida.
+
+
+
+---
+
+Exemplo de Execução:
+
+1. Entrada do usuário:
+
+Digite o Primeiro Número: 5
+Digite o Segundo Número: 3
+Escolha um Operador Lógico: +
+
+
+2. Saída do programa:
+
+8
+
+
+
+Outro exemplo com operador inválido:
+
+1. Entrada do usuário:
+
+Digite o Primeiro Número: 5
+Digite o Segundo Número: 3
+Escolha um Operador Lógico: @
+
+
+2. Saída do programa:
+
+Operador Invalido

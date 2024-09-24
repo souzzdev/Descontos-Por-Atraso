@@ -1,0 +1,89 @@
+Documentação do Código
+
+Objetivo:
+
+Este código tem o objetivo de calcular o salário por hora de um funcionário com base no salário mensal, na quantidade de dias trabalhados no mês e no número de horas trabalhadas por dia.
+
+Função:
+
+1. calcular_salario_por_hora(salario_mensal, dias_trabalhados_mes, horas_por_dia):
+
+Parâmetros:
+
+salario_mensal: o valor do salário mensal do funcionário.
+
+dias_trabalhados_mes: a quantidade de dias trabalhados no mês.
+
+horas_por_dia: a quantidade de horas trabalhadas por dia.
+
+
+Descrição: Esta função calcula o valor do salário por hora dividindo o salário mensal pelo total de horas trabalhadas no mês, que é obtido multiplicando o número de dias trabalhados no mês pela quantidade de horas trabalhadas por dia.
+
+Retorno: O valor do salário por hora.
+
+
+
+
+Fluxo Principal do Código:
+
+1. Entrada de Dados:
+
+O código solicita ao usuário três informações:
+
+O valor do salário mensal.
+
+O número de dias trabalhados no mês.
+
+O número de horas trabalhadas por dia.
+
+
+
+
+2. Cálculo do Salário por Hora:
+
+A função calcular_salario_por_hora é chamada, utilizando os valores fornecidos pelo usuário.
+
+O total de horas trabalhadas no mês é calculado como:
+
+horas_trabalhadas_mes = dias_trabalhados_mes * horas_por_dia
+
+O salário por hora é então calculado como:
+
+salario_por_hora = salario_mensal / horas_trabalhadas_mes
+
+
+
+3. Exibição do Resultado:
+
+O código exibe o valor do salário por hora, formatado com duas casas decimais.
+
+
+
+
+Exemplo de Funcionamento:
+
+Suponha que o salário mensal seja de R$ 3.000,00, o funcionário trabalhe 22 dias no mês e 8 horas por dia. O cálculo será feito da seguinte maneira:
+
+1. O total de horas trabalhadas no mês será:
+
+horas_trabalhadas_mes = 22 * 8 = 176 horas
+
+
+2. O salário por hora será:
+
+salario_por_hora = 3000 / 176 = 17,05 reais por hora
+
+
+3. O código exibirá:
+
+Seu salário por hora é: R$ 17,05
+
+
+
+Considerações:
+
+O código permite que o usuário insira valores de horas por dia com casas decimais, como no caso de jornadas parciais.
+
+As entradas devem ser coerentes, como um número positivo para o salário, dias e horas, garantindo o cálculo correto do salário por hora.
+
+
